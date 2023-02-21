@@ -1,0 +1,23 @@
+----1
+cat > Pets
+cat > Packanimals
+cat Pets Packanimals > Animals
+cat Animals
+mv Animals HumanFriends
+cat HumanFriends
+----2
+mkdir Animals
+mv HumanFriends Animals
+cd Animals/
+ls -al
+----3
+sudo apt update
+sudo apt install mysql-server mysql-client
+cd /etc/mysql
+----4
+wget https://download.virtualbox.org/virtualbox/7.0.4/virtualbox-7.0_7.0.4-154605~Ubuntu~jammy_amd64.deb
+ll
+sudo dpkg -i virtualbox-7.0_7.0.4-154605~Ubuntu~jammy_amd64.deb
+sudo apt -f install
+sudo dpkg -r virtualbox-7.0
+
